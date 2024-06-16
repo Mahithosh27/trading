@@ -1,0 +1,68 @@
+<div class="container">
+    <h1>DTCC Trading Platform</h1>
+    <div class="trading-header">
+      <label for="pair">Pair:</label>
+      <input id="pair" [(ngModel)]="pair" placeholder="EUR/USD">
+  
+      <label for="account">Account:</label>
+      <input id="account" [(ngModel)]="account" placeholder="Account2">
+  
+      <label for="type">Type:</label>
+      <select id="type" [(ngModel)]="type">
+        <option value="SpotOutright">SpotOutright</option>
+        <!-- Add more options as needed -->
+      </select>
+    </div>
+  
+    <div class="trading-layout">
+      <div class="sell-data">
+        <h2>Sell EUR Rates</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Bank</th>
+              <th>SPOT</th>
+              <th>1M</th>
+              <th>Sell EUR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let bank of banks">
+              <td>{{ bank.name }}</td>
+              <td>{{ bank.spot }}</td>
+              <td>{{ bank.oneM }}</td>
+              <td>{{ bank.sellEur }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  
+      <div class="trading-controls">
+        <button (click)="sell()">Sell EUR at {{ currentSellRate }}</button>
+        <button (click)="buy()">Buy EUR at {{ currentBuyRate }}</button>
+      </div>
+  
+      <div class="buy-data">
+        <h2>Buy EUR Rates</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Bank</th>
+              <th>SPOT</th>
+              <th>1M</th>
+              <th>Buy EUR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let bank of banks">
+              <td>{{ bank.name }}</td>
+              <td>{{ bank.spot }}</td>
+              <td>{{ bank.oneM }}</td>
+              <td>{{ bank.buyEur }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  

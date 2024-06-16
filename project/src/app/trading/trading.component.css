@@ -1,0 +1,123 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: #E0F6F3; /* Light teal background */
+  color: #4D4C72; /* Dark gray text */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4D4C72; /* Dark gray text for the header */
+}
+
+.trading-header, .trading-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.trading-header {
+  justify-content: center;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 5px;
+  color: #4D4C72; /* Dark gray text for labels */
+}
+
+input, select {
+  background-color: #229C8F; /* Teal background for inputs */
+  border: none;
+  border-radius: 4px;
+  color: #E0F6F3; /* Light teal text for inputs */
+  padding: 5px 10px;
+}
+
+button {
+  background-color: #FFE4A9; /* Pale yellow button background */
+  border: none;
+  border-radius: 4px;
+  color: #4D4C72; /* Dark gray text for buttons */
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #EFD28D; /* Darker pale yellow on hover */
+}
+
+.trading-data {
+  background-color: #229C8F; /* Teal background for trading data */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #BDC3C7;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #FFE4A9; /* Pale yellow header background */
+  color: #4D4C72; /* Dark gray text for table headers */
+}
+
+td {
+  background-color: #229C8F; /* Teal background for table data */
+  color: #E0F6F3; /* Light teal text for table data */
+}
+
+tr:nth-child(even) {
+  background-color: #38B2A7; /* Alternate row color */
+}
+
+tr:nth-child(odd) {
+  background-color: #229C8F;
+}
+
+.trading-layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sell-data,
+.buy-data {
+  width: 45%;
+}
+
+.trading-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 10%;
+}
+
+.trading-controls button:first-child {
+  align-self: flex-start;
+}
+
+.trading-controls button:last-child {
+  align-self: flex-end;
+}
+
+h2 {
+  text-align: center;
+  color: #4D4C72; /* Dark gray text for subheadings */
+}
+.trading-controls{
+  color: red;
+}
