@@ -41,21 +41,21 @@ input, select {
 }
 
 button {
-  background-color: #FFE4A9; /* Pale yellow button background */
+  background-color: #FFE4A9;
   border: none;
   border-radius: 4px;
-  color: #4D4C72; /* Dark gray text for buttons */
+  color: #4D4C72; 
   padding: 10px 20px;
   font-weight: bold;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #EFD28D; /* Darker pale yellow on hover */
+  background-color: #EFD28D; 
 }
 
 .trading-data {
-  background-color: #229C8F; /* Teal background for trading data */
+  background-color: #229C8F;
   padding: 20px;
   border-radius: 8px;
 }
